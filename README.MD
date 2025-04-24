@@ -202,5 +202,119 @@ console.log(colors);  // ["red", "blue", "green"]
 
 ---
 
+# 📘 JavaScript Data Types – Explained for Beginners
+
+In JavaScript, **data types** are the types of values that we can store in variables. Understanding data types is important because JavaScript is a **dynamically typed language**, meaning the type of a variable is determined at runtime.
+
+---
+
+## 🧠 Two Main Categories of Data Types
+
+1. **Primitive Data Types** (Basic and immutable)
+2. **Non-Primitive (Reference) Data Types** (Complex and mutable)
+
+---
+
+## 🔵 1. Primitive Data Types
+
+These hold **single values** and are **immutable** (cannot be changed once created).
+
+### ✅ Types of Primitive Data Types:
+
+### 1. Number
+- Represents both integers and floating-point numbers.
+
+```js
+let age = 25;
+let price = 99.99;
+```
+
+### 2. String
+- Used to represent text. Text is written inside single `'` or double `"` quotes.
+
+```js
+let name = "Alice";
+let message = 'Hello World!';
+```
+
+### 3. Boolean
+- Represents only two values: `true` or `false`.
+
+```js
+let isLoggedIn = true;
+let isOnline = false;
+```
+
+### 4. Undefined
+- A variable that has been declared but **not yet assigned** a value.
+
+```js
+let user;
+console.log(user); // Output: undefined
+```
+
+### 5. Null
+- Represents **no value** or the **intentional absence of any object value**.
+
+```js
+let data = null;
+```
+
+### 6. Symbol
+- Used to create **unique identifiers** for objects (mostly in advanced JS use cases).
+
+```js
+let id = Symbol('id');
+```
+
+### 7. BigInt
+- Used for **very large integers** beyond the safe limit for numbers.
+
+```js
+let bigNumber = 1234567890123456789012345678901234567890n;
+```
+
+---
+
+## 🟣 2. Non-Primitive (Reference) Data Types
+
+These data types can **store collections of values** or more complex data.
+
+### ✅ Types of Non-Primitive Data Types:
+
+### 1. Object
+- Used to store **key-value pairs**.
+
+```js
+let person = {
+    name: "John",
+    age: 30
+};
+```
+
+### 2. Array
+- A type of object used to store **ordered lists**.
+
+```js
+let colors = ["red", "green", "blue"];
+console.log(colors[0]); // Output: red
+```
+
+### 3. Function
+- Functions are reusable blocks of code.
+
+```js
+function greet() {
+    console.log("Hello!");
+}
+greet(); // Output: Hello!
+```
+
+---
+
+
+
+
+
 
 
