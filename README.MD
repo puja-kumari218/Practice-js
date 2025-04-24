@@ -81,3 +81,40 @@ Let’s say you’re cooking (JavaScript thread) and you start boiling water (AP
 
 This is what makes JavaScript powerful for building interactive and responsive web applications — even with a single thread.
 
+
+## ✨ JavaScript Variables — A Beginner Friendly Guide
+
+### 🔰 What is a Variable?
+
+Imagine a **box** with a name where you can **store any value** — like a number, a name, or a message.  
+That box is called a **variable** in JavaScript.  
+We use variables to **store data**, **reuse it**, or even **change it later**.
+
+### 🧪 Declaring Variables in JavaScript
+
+We declare variables using these **three keywords**:
+
+- `var` — (Old Way)
+- `let` — (Modern and Flexible)
+- `const` — (For constants / fixed values)
+
+---
+
+## 🟠 1. `var` – The Old Way
+
+### 📌 What is it?
+
+- Introduced in older versions of JavaScript.
+- Can be **re-declared** and **updated**.
+- Has **function scope** (works inside a function) or **global scope** (if not inside function).
+
+### 🔍 Example:
+
+```js
+var name = "puja";
+console.log(name); // Output: Rajat
+
+var name = "kumari"; // ✅ Re-declared
+console.log(name); // Output: Puja
+
+
