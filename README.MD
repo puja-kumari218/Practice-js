@@ -112,9 +112,49 @@ We declare variables using these **three keywords**:
 
 ```js
 var name = "puja";
-console.log(name); // Output: Rajat
+console.log(name); // Output: puja
 
 var name = "kumari"; // ✅ Re-declared
 console.log(name); // Output: Puja
 
 
+## 🟡 2. `let` – The Modern Way
+
+### 📌 What is `let`?
+
+- Introduced in **ES6** (modern version of JavaScript).
+- Used to declare variables whose **value might change** later.
+- Can be **updated**, but **cannot be re-declared** in the same block.
+- Has **block scope**, meaning it only exists inside the `{}` where it's written.
+
+### 🔍 Example:
+
+```js
+let age = 25;
+age = 26;          // ✅ Value updated
+console.log(age);  // Output: 26
+
+let name = "puja";
+// let name = "kumari"; ❌ Error: Cannot redeclare 'name' in the same block
+
+
+## 🟢 3 .`const` – For Constants
+
+### 📌 What is `const`?
+
+- `const` stands for **constant**.
+- Introduced in **ES6 (2015)**, just like `let`.
+- Used to declare **variables whose values should never change**.
+- It is **block-scoped**, meaning it only works inside the `{}` where it's defined.
+- A `const` variable **must be initialized at the time of declaration**.
+
+---
+
+### 🔍 Syntax & Example
+
+```js
+const pi = 3.14;
+console.log(pi);   // Output: 3.14
+
+// Trying to change it will cause an error
+// pi = 3.14159;   ❌ Error: Assignment to constant variable
