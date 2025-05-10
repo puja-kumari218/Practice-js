@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Grocery List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f3f3f3;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 6px;
+      background: #fff;
+      margin-bottom: 5px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🛒 Grocery List</h2>
+  <input type="text" id="itemInput" placeholder="Enter item">
+  <button onclick="addItem()">Add</button>
+  <button onclick="removeItem()">Remove Last</button>
+  <button onclick="filterItems()">Filter 'A'</button>
+
+  <ul id="groceryList"></ul>
+
+  <script>
+    let groceries = [];
+
+    function displayList(items) {
+      const list = document.getElementById('groceryList');
+      list.innerHTML = '';
+      items.map(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        list.appendChild(li);
+      });
+    }
+
+    function addItem() {
+      const input = document.getElementById('itemInput');
+      if (input.value) {
+        groceries.push(input.value); // push()
+        displayList(groceries);
+        input.value = '';
+      }
+    }
+
+    function removeItem() {
+      groceries.pop(); // pop()
+      displayList(groceries);
+    }
+
+    function filterItems() {
+      const filtered = groceries.filter(item => item.startsWith('A')); // filter()
+      displayList(filtered);
+    }
+  </script>
+
+</body>
+</html>
