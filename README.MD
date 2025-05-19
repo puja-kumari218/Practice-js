@@ -307,10 +307,6 @@ console.log(colors[0]); // Output: red
 function greet() {
     console.log("Hello!");
 }
-greet(); // Output: Hello!
-```
-
----
 
 
 
